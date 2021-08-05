@@ -1,0 +1,30 @@
+.container-seg-carousel {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box-carousel {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px 10px;
+  }
+
+  .modelo {
+    height: 150px;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 610px) {
+  #segundoCarousel {
+    .hrcontainer {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.footer-socials {
+  color: white;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.footer-hover-a {
+  p {
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+}

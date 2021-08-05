@@ -1,0 +1,13 @@
+// General
+@import "general";
+// Secciones
+@import "api";
+@import "servicios";
+@import "navegador";
+@import "lineaTiempo";
+@import "primercarousel";
+@import "segundoCarousel";
+@import "contacto";
+@import "footer";
+// Externos
+@import "../node_modules/bootstrap/scss/bootstrap";

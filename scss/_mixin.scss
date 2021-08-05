@@ -1,0 +1,61 @@
+@mixin sombra($size) {
+  -webkit-box-shadow: -$size $size 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -$size $size 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -$size $size 0px 0px rgba(0, 0, 0, 0.5);
+  margin-left: $size;
+  border: 2px solid #000;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin animation-mixin($name, $from, $to) {
+  @keyframes #{$name} {
+    0% {
+      transform: translate3d($from, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: translate3d($to, 0, 0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin halo() {
+  position: relative;
+
+  &:after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 96%;
+    height: 96%;
+    border-radius: 100%;
+
+    border: 1px solid $secondary;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 0;
+
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.4s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.4s;
+    transition: transform 0.3s, opacity 0.4s;
+  }
+
+  &:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}

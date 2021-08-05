@@ -1,0 +1,19 @@
+/* Secciòn de api  */
+@import "mixin";
+
+#seccion-api {
+  color: #1f4e79;
+  font-size: 3em;
+  padding: 0 40px 0 40px;
+  margin: 0 40px 0 40px;
+  justify-content: center;
+}
+
+.button-contratar {
+  width: 229px;
+  height: 65px;
+  line-height: 20px;
+  text-align: center;
+  @include sombra(4px);
+  @include halo();
+}

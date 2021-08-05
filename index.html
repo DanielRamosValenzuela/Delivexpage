@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="scss/main.css">
+    <!-- Letra popins  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <!-- Inconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Importaciones de font awesome -->
+    <link href="/css/all.css" rel="stylesheet">
+    <!-- importacion de estilo para carousel numero 2 -->
+    <link rel="stylesheet" href="css/lightslider.css">
+    <!-- SEO -->
+    <meta name="description" content="Delivex, despacho para tu empresa de forma eficiente, segura y rápida, llegamos para toda la Región Metropolitana en Santiago">
+    <meta name="keywords"  content="delivex, despacho,delivery, reparto, rapidez, seguridad, eficiente">
+
+
+    <title>Delivex, despacho para tu empresa</title>
+  </head>
+  <body>
+  <!-- Header y navegaciòn de la pàgina -->
+
+  <header>
+    <nav class="fixed-top">
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
+
+      <div class="logo">
+        <a href="index.html">
+          <img src="Imagenes/delivex.jpeg" alt="Logo-delivex"/>
+        </a>
+      </div>
+
+      <div class="nav-items">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li class="login">
+          <button type="button" class="btn btn-outline-secondary btn-sm">
+            Iniciar Sesión
+          </button>
+        </li>
+      </div>
+
+
+      <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+      </div>
+
+      <div class="me-4">
+        <button>
+          <i class="fab fa-instagram me-4" style="font-size: 28px;"></i>
+          <i class="fab fa-whatsapp" style="font-size: 28px;"></i>
+        </button>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Fin del header -->
+  
+
+  <!-- Carousel-->
+  <main>
+    <section>
+      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to=0 class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to=1></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to=2></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <div class="overlay-image" style="background-image: url(Imagenes/indexslideop1.png);"></div>
+            <div class="container carousel-container">
+              <p style="text-transform: uppercase;">bienvenido a envíos y encomiendas</p>
+              <h1><b style="text-decoration: underline;">Rapidez y seguridad</b> para <br> todos tus envíos</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay-image" style="background-image: url(Imagenes/indexslideop2.png);"></div>
+            <div class="container carousel-container">
+              <p style="text-transform: uppercase;">bienvenido a envíos y encomiendas</p>
+              <h1><b style="text-decoration: underline;">Rapidez y seguridad</b> para <br> todos tus envíos</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay-image" style="background-image: url(Imagenes/indexslideop3.png);"></div>
+            <div class="container carousel-container">
+              <p style="text-transform: uppercase;">bienvenido a envíos y encomiendas</p>
+              <h1><b style="text-decoration: underline;">Rapidez y seguridad</b> para <br> todos tus envíos</h1>
+            </div>
+          </div>
+        </div>
+        <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+          <span class="sr-only">Anterior</span>
+          <span class="carousel-control-prev-icon" arial-hidden="true"></span>
+        </a>
+        <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+          <span class="sr-only">Siguiente</span>
+          <span class="carousel-control-next-icon" arial-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Fin del carousel -->
+
+    
+    <!-- Cuerpo de la pàgina-->
+
+      <!-- Secciòn servicio -->
+      <section id="servicios" class="text-center my-5 py-5">
+        <div class="text-center">
+        <span id="realizar-servicios">¿BUSCAS REALIZAR UN ENVÌO?</span>
+        <br>
+        <span id="realizar-servicio-hijo">Estos son nuestros servicios, cotiza con <br> nosotros</span>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 servicios">
+          <div class="col">
+            <div class="card h-100">
+              <a data-bs-toggle="modal" data-bs-target="#modalBox">
+              <img class="img-fluid" src="Imagenes/boximage.png" alt="Caja-servicio"/>
+              </a>
+              <div class="card-body">
+                <span class="card-title">Card title</span>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, molestiae nam! Doloribus alias eum ducimus sit impedit fuga eius magnam vero aspernatur, quisquam ipsum enim eveniet delectus magni suscipit quidem.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBox">Más información</button>
+              </div>   
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a data-bs-toggle="modal" data-bs-target="#modalTransporte">
+              <img class="img-fluid" src="Imagenes/truckimage.png" alt="Camión-servicio"/>
+              </a>
+              <div class="card-body">
+                <span class="card-title">Card title</span>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati minus commodi sapiente odit tenetur cum sit illo, aspernatur eligendi laborum facere! Veniam, molestiae. Animi sint earum ea velit, porro dolorum.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTransporte">Más información</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a data-bs-toggle="modal" data-bs-target="#modalAplicacion">
+              <img class="img-fluid" src="Imagenes/tecnoimage.png" alt="Tecnologìa-servicio"/>
+              </a>
+              <div class="card-body">
+                <span class="card-title">Card title</span>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati minus commodi sapiente odit tenetur cum sit illo, aspernatur eligendi laborum facere! Veniam, molestiae. Animi sint earum ea velit, porro dolorum.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAplicacion">Más información</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Modal Caja-->
+        <div class="modal fade" id="modalBox" tabindex="-1" aria-labelledby="modalBox" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalBox">Cajas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam incidunt facere doloribus quaerat voluptatum! Dolorum culpa veritatis, explicabo, voluptatum commodi dolores magni aliquam voluptas doloremque, amet natus debitis! Temporibus, illo.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Modal transporte-->
+        <div class="modal fade" id="modalTransporte" tabindex="-1" aria-labelledby="modalTransporte" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTransporte">Transporte</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam incidunt facere doloribus quaerat voluptatum! Dolorum culpa veritatis, explicabo, voluptatum commodi dolores magni aliquam voluptas doloremque, amet natus debitis! Temporibus, illo.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Modal aplicación-->
+        <div class="modal fade" id="modalAplicacion" tabindex="-1" aria-labelledby="modalAplicacion" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalAplicacion">Aplicación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam incidunt facere doloribus quaerat voluptatum! Dolorum culpa veritatis, explicabo, voluptatum commodi dolores magni aliquam voluptas doloremque, amet natus debitis! Temporibus, illo.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Secciòn nosotros -->
+      <section id="nosotros">
+        <div class="container-fluid">
+        <div class="row justify-content-md-center">
+          <div class="col-lg-6 col-md-auto">
+            <img class="img-fluid img-thumbnail" style="width: 95%;" src="Imagenes/nosotrosimage.png" alt="Entrega-de-paquete" class="img-nosotros"/>
+          </div>
+          <div class="col-lg-6 col-md-auto" style="text-align: left;">
+            <span style="color: #1f4e79; font-size: 24px;"><b>NOSOTROS</b> </span>
+            <p style=" font-size: 36px; font-weight: bold; line-height: 54px;">
+              Nos unimos para <br>estar más cerca de ti <br>y entregarte el mejor <br>servicio
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+              quidem pariatur hic quia eaque possimus maxime ipsam ipsum unde?
+              Deleniti eaque porro harum nulla impedit maxime nam praesentium
+              cupiditate aut.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+              quidem pariatur hic quia eaque possimus maxime ipsam ipsum unde?
+              Deleniti eaque porro harum nulla impedit maxime nam praesentium
+              cupiditate aut.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Linea de tiempo -->
+      <section class="linea-tiempo-container">
+        <div class="mb-2">
+          <h2>
+            Mira estos 5 pasos y podrás olvidate de la logística teniendo mas
+            tiempo para tu negocio
+          </h2>
+        </div>
+        <!-- Parte la Linea de tiempo -->      
+        <div class="process-wrapper">
+          <div id="progress-bar-container">
+            <ul>
+              <li class="step step01 active"><div class="step-inner">Registro</div></li>
+              <li class="step step02"><div class="step-inner">Selección</div></li>
+              <li class="step step03"><div class="step-inner">Despacho</div></li>
+              <li class="step step04"><div class="step-inner">Entrega</div></li>
+              <li class="step step05"><div class="step-inner">Ganancias</div></li>
+            </ul>
+            
+            <div id="line">
+              <div id="line-progress"></div>
+            </div>
+          </div>
+          
+          <div id="progress-content-section">
+            <div class="section-content registro active">
+              <i class="fas fa-registered"></i>
+              <h2>Registro</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+            </div>
+            
+            <div class="section-content seleccion">
+              <i class="fas fa-hand-pointer"></i>
+              <h2>Selección</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+            </div>
+            
+            <div class="section-content despacho">
+              <i class="fas fa-truck"></i>
+              <h2>Despacho</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+            </div>
+            
+            <div class="section-content entrega">
+              <i class="fas fa-handshake"></i>
+              <h2>Entrega</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+            </div>
+            
+            <div class="section-content ganancias">
+              <i class="fas fa-money-bill"></i>
+              <h2>Ganancias</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+            </div>
+            </div>
+          </div>
+      <!-- Secciòn de api -->
+      </section>
+      <section>
+        <div class="text-center">
+          <p id="seccion-api" class="m-4 p-2">
+            <b>
+            Puedes usar alguna de nuestras integraciones, o  construir tu propio
+            pedido a través de nuestra API REST
+          </b>
+          </p>
+          <button type="button" class="btn btn-outline-primary border border-2 rounded-pill mt-2 button-contratar"><b>CONTRATAR</b></button>
+        </div>
+      </section>
+      <!-- Secciòn alianzas (Aquì va un carousel de las alianzas) -->
+      <section id="segundoCarousel" class="p-5 m-5">
+        <div class="row justify-content-center text-center">
+          <div class="col ps-5 hrcontainer">
+            <hr style="border: 3px solid #1f4e79; border-radius: 5px;">
+          </div>
+          <div class="col">
+            <h3>NUESTRAS ALIANZAS</h3>
+          </div>
+          <div class="col pe-5 hrcontainer">
+            <hr style="border: 3px solid #1f4e79; border-radius: 5px;">
+          </div>
+        </div>
+
+
+        <!-- Inicio de Carousel -->
+        <div class="container-seg-carousel py-5">
+          <!-- Inicio de slider -->
+          <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+              <div class="box-carousel">
+                <img src="Imagenes/alianza1.png" alt="alinaza" class="modelo">
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box-carousel">
+                <img src="Imagenes/alianza2.png" alt="alinaza" class="modelo">
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box-carousel">
+                <img src="Imagenes/alianza3.png" alt="alinaza" class="modelo">
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box-carousel">
+                <img src="Imagenes/alianza4.png" alt="alinaza" class="modelo">
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box-carousel">
+                <img src="Imagenes/alianza5.png" alt="alinaza" class="modelo">
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box-carousel">
+                <img src="Imagenes/alianza6.png" alt="alinaza" class="modelo">
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box-carousel">
+                <img src="Imagenes/alianza7.png" alt="alinaza" class="modelo">
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+      </section>
+    </main>
+    <!-- Fin del cuerpo -->
+
+ <!-- Inicio del Footer -->
+
+  <!-- Inicio footer -->
+  <footer class="bg-dark text-white">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-3 font-weight-bold text-warning">
+            Delivex
+          </h5>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut sequi
+            quas inventore ea fugiat! Aspernatur vero molestias nisi, error
+            saepe nemo eum recusandae distinctio optio rerum sequi quibusdam
+            suscipit obcaecati?
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-3 font-weight-bold text-warning">
+            Información
+          </h5>
+          <p>
+            <a href="contacto.html" class="text-white" style="text-decoration: none"
+              ><i class="fas fa-hand-pointer"></i> Contacto</a
+            >
+          </p>
+
+          <p>
+            <a href="covid.html" class="text-white" style="text-decoration: none"
+              ><i class="fas fa-hand-pointer"></i> Covid-19</a
+            >
+          </p>
+          <p>
+            <a href="politicas.html" class="text-white" style="text-decoration: none"
+              ><i class="fas fa-hand-pointer"></i> Pòliticas y privacidad</a
+            >
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-3 font-weight-bold text-warning">
+            Alianzas
+          </h5>
+          <p>
+            <a href="" class="text-white" style="text-decoration: none"
+              >Alianza 1</a
+            >
+          </p>
+          <p>
+            <a href="" class="text-white" style="text-decoration: none"
+              >Alianza 2</a
+            >
+          </p>
+          <p>
+            <a href="" class="text-white" style="text-decoration: none"
+              >Alianza 3</a
+            >
+          </p>
+          <p>
+            <a href="" class="text-white" style="text-decoration: none"
+              >Alianza 4</a
+            >
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-3 font-weight-bold text-warning">
+            Contáctanos
+          </h5>
+          <p>
+            <a href="" class="text-white" style="text-decoration: none"
+              ><i class="fas fa-envelope"></i> contacto@delivexp.cl</a
+            >
+          </p>
+          <p><i class="fas fa-clock"></i> Lunes a vienres de 09:00-19:00</p>
+          <span>
+            <a href=""
+              ><i class="fab fa-2x fa-instagram px-3 footer-socials"></i
+            ></a>
+            <a href=""
+              ><i class="fab fa-2x fa-whatsapp footer-socials"></i
+            ></a>
+          </span>
+        </div>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col-md col-lg-8">
+            <p>
+              © 2021 Los Papinos. Todos los derechos reservados. Página hecha
+              por:
+              <a href="" style="text-decoration: none"
+                ><strong class="text-warning"
+                  >@daniel.andres.ramos.v@gmail.com</strong
+                >
+              </a>
+            </p>
+          </div>
+
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                  >
+                    <i class="fab fa-facebook footer-socials"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                  >
+                    <i class="fab fa-linkedin-in footer-socials"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                  >
+                    <i class="fab fa-instagram footer-socials"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                  >
+                    <i class="fab fa-whatsapp footer-socials"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- Fin del footer -->
+
+<!--Scripts-->
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- scripts de jquery y ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- script de animaciones -->
+    <script src="js/wow.min.js"></script>
+    <!-- script para animacion del navbar -->
+    <script>
+      new WOW().init();
+    </script>
+   <script type="text/javascript">
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop()) {
+        $("nav").addClass("backg");
+      } else {
+        $("nav").removeClass("backg");
+      
+      }
+    });
+    </script>
+    <!-- script para animacion de la linea de tiempo -->
+    <script>
+    
+          $(".step").click( function() {
+        $(this).addClass("active").prevAll().addClass("active");
+        $(this).nextAll().removeClass("active");
+      });
+
+      $(".step01").click( function() {
+        $("#line-progress").css("width", "3%");
+        $(".registro").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step02").click( function() {
+        $("#line-progress").css("width", "25%");
+        $(".seleccion").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step03").click( function() {
+        $("#line-progress").css("width", "50%");
+        $(".despacho").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step04").click( function() {
+        $("#line-progress").css("width", "75%");
+        $(".entrega").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step05").click( function() {
+        $("#line-progress").css("width", "100%");
+        $(".ganancias").addClass("active").siblings().removeClass("active");
+      });
+    </script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+  </body>
+</html>

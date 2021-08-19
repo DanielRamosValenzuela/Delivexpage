@@ -730,7 +730,7 @@ nav .cancel-icon {
 .contact-form .input-text {
   display: block;
   width: 100%;
-  height: 36px;
+  height: 26px;
   border-width: 0 0 2px 0;
   border-color: #1f4e79;
   font-size: 18px;
@@ -742,16 +742,16 @@ nav .cancel-icon {
   outline: none;
 }
 
-.contact-form .input-text:focus + .label,
-.contact-form .input-text .contact-form .input-text.not-empty + .label {
+.contact-form .input-text:focus + .label {
   -webkit-transform: translateY(-24px);
           transform: translateY(-24px);
+  font-size: 14px;
 }
 
 .contact-form .label {
   position: absolute;
   left: 20px;
-  bottom: 11px;
+  bottom: 28px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
